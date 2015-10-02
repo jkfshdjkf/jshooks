@@ -10,7 +10,7 @@ function init(settings) {
     testing_action_pointer = 0;
     accessGroupID = settings.accessGroupID;
     delay = settings.delay;
-    testing_getLastEmail();
+   settings.email == null ? testing_getLastEmail() : doAfterEmailIsReceived(settings.email);
 }
 
 function doAfterEmailIsReceived(email) {
