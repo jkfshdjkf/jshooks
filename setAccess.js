@@ -54,9 +54,8 @@ function setAccess(EBPnumber, id) {
 
     };
     xmlHttpRequest.open("POST", address + "edit_user.jsp", true);
-    xmlHttpRequest.setRequestHeader("Content-Type", "text/html; charset=ISO-8859-1");
-    xmlHttpRequest.send("view=accesscontrolpv5&letter=D&ebp_handle=" + EBPnumber + "&accessGroupID=" + id + "&accessGroupIDInstructor=-1&date_begin=" + date_begin + "&date_end=" + date_end + "&task=Add+Access");
-
+    xmlHttpRequest.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xmlHttpRequest.send("view=accesscontrolpv5&letter=D&ebp_handle=" + EBPnumber + "&accessGroupIDs=" + id + "&accessGroupIDInstructor=-1&date_begin=" + date_begin + "&date_end=" + date_end + "&task=Add+Access");
     testing_action_pointer++;
 }
 
